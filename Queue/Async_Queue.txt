@@ -1,0 +1,8 @@
+A queue stores work FIFO(firts in , firts out) in it follows
+It is like a box where we put things and get things from it
+
+queue = asyncio.Queue()  |-> creation of queue
+
+await queue.put("task")  |-> putting things in queue
+
+item = await queue.get("task")  |-> getting or removing things in queue

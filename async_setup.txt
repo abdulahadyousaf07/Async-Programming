@@ -1,0 +1,25 @@
+We have to import asyncio library for async programming.
+
+async keyword -> It is used to perform async programming.
+e:g; async def fetch_data():
+         pass
+(This creates a coroutine)
+
+Co-routine : A function that can pause and resume.
+
+await keyword -> It is used to pause and wait until the results arrives
+e:g; async def fetch_data():
+        result = await get_from_server()
+        return result
+(Pause here until the results arrives. Meanwhile let others tasks run)
+
+Visualization : 
+    await download_image()
+    It says:
+        Download Image
+               |
+             Pause
+               |
+        Run other task
+               |
+        Resume when ready

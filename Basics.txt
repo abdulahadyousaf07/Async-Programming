@@ -1,0 +1,20 @@
+First Understand the problem. Imagine you are making tea you have following functions:
+
+    . boil_water()
+    . wait()
+    . add_tea()
+    . wait()
+    . pour_tea()
+
+In above you do one task at a time 
+Boil Water -> Add tea -> Pour tea
+Everything waits for previous task to finish
+
+NOW IN ASYNC PROGRAMMING 
+ start_boiling_water()
+    while water_is_boiling:
+       clean_cups()
+       arrange_tables()
+    add_tea()
+
+While waiting for one task , you do something else and CPU so not sit idle.
